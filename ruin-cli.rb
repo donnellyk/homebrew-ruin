@@ -5,21 +5,21 @@
 class RuinCli < Formula
   desc "A Zettelkasten-inspired note-taking CLI"
   homepage "https://github.com/donnellyk/ruin-note-cli"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/donnellyk/ruin-note-cli/releases/download/v0.2.1/ruin-darwin-amd64.tar.gz"
-      sha256 "59b8a121e585d9b81a9cf019bf25da615ac1d42c5124c3d8a597d2393832c108"
+      url "https://github.com/donnellyk/ruin-note-cli/releases/download/v0.3.0/ruin-darwin-amd64.tar.gz"
+      sha256 "c6a41ddf3ff9d7b30c6023dde7b30972928fd42108ea9122923254b53826a5fd"
 
       define_method(:install) do
         bin.install "ruin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/donnellyk/ruin-note-cli/releases/download/v0.2.1/ruin-darwin-arm64.tar.gz"
-      sha256 "b03a2d70589f8f1d6d4aff417fbc8a80762b19776ebb7bfc03d8e016288361f5"
+      url "https://github.com/donnellyk/ruin-note-cli/releases/download/v0.3.0/ruin-darwin-arm64.tar.gz"
+      sha256 "a709806ffa6966df537d1fb5053d453d6e16f0746e35c5064a55dd4e7bc235bd"
 
       define_method(:install) do
         bin.install "ruin"
@@ -29,15 +29,15 @@ class RuinCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/donnellyk/ruin-note-cli/releases/download/v0.2.1/ruin-linux-amd64.tar.gz"
-      sha256 "7b1cd282386784179654ee5b70958182a08acfc97445eb55007548d7335b9696"
+      url "https://github.com/donnellyk/ruin-note-cli/releases/download/v0.3.0/ruin-linux-amd64.tar.gz"
+      sha256 "cde6ce9424ee769d593dbb0fa00ac644ef5dab9ed4f191cfcb018af9dc17f622"
       define_method(:install) do
         bin.install "ruin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/donnellyk/ruin-note-cli/releases/download/v0.2.1/ruin-linux-arm64.tar.gz"
-      sha256 "083ddb34a7ed16200ada95827d19cbcb71e1d5644c4dd09a47f4a29a05f50d5d"
+      url "https://github.com/donnellyk/ruin-note-cli/releases/download/v0.3.0/ruin-linux-arm64.tar.gz"
+      sha256 "fdc46d5bda712650d623867dadf43a32229c0400d31af03dc6cf5cde8cbefe43"
       define_method(:install) do
         bin.install "ruin"
       end
