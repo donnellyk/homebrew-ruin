@@ -5,23 +5,23 @@
 class Lazyruin < Formula
   desc "TUI for the ruin note-taking CLI"
   homepage "https://github.com/donnellyk/lazyruin"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   depends_on "ruin-cli"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/donnellyk/lazyruin/releases/download/v0.1.0/lazyruin-darwin-amd64.tar.gz"
-      sha256 "a30edef8e9e30d9baaf113f7aacf671df7105e4c9427f819aa1ebabffdc09369"
+      url "https://github.com/donnellyk/lazyruin/releases/download/v0.2.0/lazyruin-darwin-amd64.tar.gz"
+      sha256 "3a1be12de357628a560503bafc441c8ed3eefe76ceb26738554bea3224fc4928"
 
       define_method(:install) do
         bin.install "lazyruin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/donnellyk/lazyruin/releases/download/v0.1.0/lazyruin-darwin-arm64.tar.gz"
-      sha256 "65bb73bab65498badb75a86b2f1ee6078014a7040e3550c3709d0487cbe4e33e"
+      url "https://github.com/donnellyk/lazyruin/releases/download/v0.2.0/lazyruin-darwin-arm64.tar.gz"
+      sha256 "4bfa6db15ff15e084281d41c8eb223a36b35b69ee7fe4dde34190a9e1f51d185"
 
       define_method(:install) do
         bin.install "lazyruin"
@@ -31,15 +31,15 @@ class Lazyruin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/donnellyk/lazyruin/releases/download/v0.1.0/lazyruin-linux-amd64.tar.gz"
-      sha256 "20ff2a2c21f8f958d0ebe0f9eb843bf21fc4b977242dbdc50f4d754659877007"
+      url "https://github.com/donnellyk/lazyruin/releases/download/v0.2.0/lazyruin-linux-amd64.tar.gz"
+      sha256 "379b1983114858bfbdc4a279388969727f5f6d207696e94c87087e9697a0b1db"
       define_method(:install) do
         bin.install "lazyruin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/donnellyk/lazyruin/releases/download/v0.1.0/lazyruin-linux-arm64.tar.gz"
-      sha256 "846dfe2e520e98a89c1a55bb2fff18a659d1213d0438890ab2486e2b1211bbe5"
+      url "https://github.com/donnellyk/lazyruin/releases/download/v0.2.0/lazyruin-linux-arm64.tar.gz"
+      sha256 "c94550dc399c9186abda31a2c289b41d2c4903e5693bc72bde8620dddfc1b945"
       define_method(:install) do
         bin.install "lazyruin"
       end
